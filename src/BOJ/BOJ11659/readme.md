@@ -57,5 +57,8 @@ public class BOJ11659BookSolve {
 ```
 
 ## 합배열 구하기
+
+> 출처: Do it! 알고리즘 코딩 테스트 - 자바 편
+
 ![image](https://user-images.githubusercontent.com/85930725/187392997-5642b4f3-433e-42f1-8c26-8399c0736743.png)
 
