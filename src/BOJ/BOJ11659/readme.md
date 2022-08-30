@@ -58,4 +58,5 @@ public class BOJ11659BookSolve {
 
 ## 합배열 구하기
 ![이름 없는 노트북-3.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5748365f-bc4b-4719-ae39-bf672fa76ff3/%E1%84%8B%E1%85%B5%E1%84%85%E1%85%B3%E1%86%B7_%E1%84%8B%E1%85%A5%E1%86%B9%E1%84%82%E1%85%B3%E1%86%AB_%E1%84%82%E1%85%A9%E1%84%90%E1%85%B3%E1%84%87%E1%85%AE%E1%86%A8-3.jpg)
+![이름 없는 노트북-3.jpg](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/5748365f-bc4b-4719-ae39-bf672fa76ff3/%E1%84%8B%E1%85%B5%E1%84%85%E1%85%B3%E1%86%B7_%E1%84%8B%E1%85%A5%E1%86%B9%E1%84%82%E1%85%B3%E1%86%AB_%E1%84%82%E1%85%A9%E1%84%90%E1%85%B3%E1%84%87%E1%85%AE%E1%86%A8-3.jpg)
 
