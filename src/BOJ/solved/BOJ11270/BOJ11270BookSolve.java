@@ -1,4 +1,4 @@
-package BOJ.BOJ11270;
+package BOJ.solved.BOJ11270;
 
 import java.util.Scanner;
 

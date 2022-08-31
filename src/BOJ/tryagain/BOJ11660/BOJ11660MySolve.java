@@ -1,4 +1,4 @@
-package BOJ.BOJ11660;
+package BOJ.tryagain.BOJ11660;
 
 import java.io.BufferedReader;
 import java.io.IOException;
