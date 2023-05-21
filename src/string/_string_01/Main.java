@@ -37,5 +37,4 @@ public class Main {
 
         System.out.println(T.solution(str, c));
     }
-
 }
