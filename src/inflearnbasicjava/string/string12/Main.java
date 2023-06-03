@@ -62,7 +62,7 @@ public class Main {
         System.out.println(stringBuilder);
     }
 
-    public void solution2(int n, String s) {
+    public void teacherSolution(int n, String s) {
         String answer = "";
         for (int i = 0; i < n; i++) {
             String tmp = s.substring(0, 7).replace('#', '1').replace('*', '0');
