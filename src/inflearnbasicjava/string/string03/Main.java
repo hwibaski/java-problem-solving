@@ -1,4 +1,4 @@
-package inflearnbasicjava.string.string03.answer;
+package inflearnbasicjava.string.string03;
 
 import java.util.Scanner;
 
@@ -13,17 +13,19 @@ public class Main {
 
     public String solution(String str) {
         String answer = "";
-        /* solution 1.
-        int m = Integer.MAX_VALUE;
-        String[] s = str.split(" ");
-        for (String x : s) {
-            int len = x.length();
-            if(len>m) {
-                m=len;
-                answer=x;
+
+        String[] temp = str.split(" ");
+        for (String x : temp) {
+            if (x.length() > answer.length()) {
+                answer = x;
             }
         }
-         */
+
+        return answer;
+    }
+
+    public String teacherSolution(String str) {
+        String answer = "";
 
         int m = Integer.MIN_VALUE, pos;
 
@@ -43,5 +45,4 @@ public class Main {
 
         return answer;
     }
-
 }
