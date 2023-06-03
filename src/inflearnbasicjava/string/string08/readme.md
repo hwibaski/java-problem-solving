@@ -23,7 +23,7 @@
 found7, time: study; Yduts; emit, 7Dnuof
 ```
 
-▣ 출력예제
+### ▣ 출력예제
 
 ```text
 YES
