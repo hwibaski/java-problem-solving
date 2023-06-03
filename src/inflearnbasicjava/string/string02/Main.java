@@ -1,4 +1,4 @@
-package inflearnbasicjava.string.string02.answer;
+package inflearnbasicjava.string.string02;
 
 import java.util.Scanner;
 
@@ -6,7 +6,6 @@ import java.util.Scanner;
  * Character 클래서 사용해도 되지만 ASCII 코드로도 해결 가능 영대문자 : 65 ~ 90 영소문자 : 97 ~ 122 a는 97, A는 65 a -> A하기 위해서는
  * 97 - 32 -> 65
  */
-
 public class Main {
 
     public static void main(String[] args) {
@@ -17,6 +16,19 @@ public class Main {
     }
 
     public String solution(String str) {
+        String answer = "";
+        for (char x : str.toCharArray()) {
+            if (Character.isLowerCase(x)) {
+                answer += Character.toUpperCase(x);
+            } else {
+                answer += Character.toLowerCase(x);
+            }
+        }
+
+        return answer;
+    }
+
+    public String teacherSolution(String str) {
         String answer = "";
         for (char x : str.toCharArray()) {
             if (x >= 97 && x <= 122) {
