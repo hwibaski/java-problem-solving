@@ -21,7 +21,7 @@
 KKHSSSSSSSE
 ```
 
-▣ 출력예제
+### ▣ 출력예제
 
 ```text
 K2HS7E
