@@ -35,7 +35,7 @@ public class Main {
         System.out.println(answer);
     }
 
-    public void solution2(String str) {
+    public void teacherSolution(String str) {
         String answer = "NO";
         /**
          * [^A-Z] : A ~ Z가 아닌 것들을 선택
