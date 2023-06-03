@@ -1,4 +1,4 @@
-package inflearnbasicjava.string.string05.my_solve;
+package inflearnbasicjava.string.string05;
 
 import java.util.Scanner;
 
@@ -27,4 +27,23 @@ public class Main {
         return String.valueOf(s);
     }
 
+    public String teacherSolution(String str) {
+        char[] s = str.toCharArray();
+        int lt = 0, rt = str.length() - 1;
+        while (lt < rt) {
+            if (!Character.isAlphabetic(s[lt])) {
+                lt++;
+            } else if (!Character.isAlphabetic(s[rt])) {
+                rt--;
+            } else {
+                char tmp = s[lt];
+                s[lt] = s[rt];
+                s[rt] = tmp;
+                lt++;
+                rt--;
+            }
+        }
+
+        return String.valueOf(s);
+    }
 }
