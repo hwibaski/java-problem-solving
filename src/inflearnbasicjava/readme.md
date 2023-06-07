@@ -34,3 +34,6 @@
 5. [소수(에라토스테네스 체)](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/array/array05)
 6. [뒤집은 소수](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/array/array06)
 7. [점수계산](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/array/array07)
+8. [등수 구하기](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/array/array08)
+9. [격자판 최대합](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/array/array09)
+10. [봉우리](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/array/array10)
