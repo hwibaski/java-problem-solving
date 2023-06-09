@@ -37,4 +37,5 @@
 8. [등수 구하기](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/array/array08)
 9. [격자판 최대합](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/array/array09)
 10. [봉우리](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/array/array10)
-11. [임시반장 정하기](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/array/array11)
+11. [📌 임시반장 정하기](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/array/array11)
+12. [📌 멘토링](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/array/array12)
