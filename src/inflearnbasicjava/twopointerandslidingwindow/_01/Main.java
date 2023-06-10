@@ -26,6 +26,7 @@ public class Main {
         main.solution(n, a, m, b);
     }
 
+    // 못 풀었음
     public void solution(int n, int[] a, int m, int[] b) {
         List<Integer> answer = new ArrayList<>();
 
