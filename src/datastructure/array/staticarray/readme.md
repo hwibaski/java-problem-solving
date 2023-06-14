@@ -20,7 +20,8 @@ arr[1];
 - 배열에서의 읽기는 O(1)의 시간복잡도를 가진다
 - 배열의 크기는 배열의 요소에 접근하는데 걸리는 시간에 영향을 주지 않는다.
 
-![img_2.png](img_2.png)
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/5b571b6e-606e-4d3c-83e5-660a8c8c1fe7)
+출처 : https://neetcode.io/courses/dsa-for-beginners/2
 
 ## 배열에서의 삭제
 
@@ -42,7 +43,8 @@ public void removeEnd(int[] arr, int length) {
 }
 ```
 
-![img_3.png](img_3.png)
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/2ec0afeb-c155-47b8-b371-17f04cd9a2e9)
+출처 : https://neetcode.io/courses/dsa-for-beginners/2
 
 ### i번째 요소 삭제
 
@@ -60,7 +62,8 @@ public void removeMiddle(int[] arr, int i, int length) {
 }
 ```
 
-![img_4.png](img_4.png)
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/ccef6b3d-5bc1-4134-afe5-0f5a941bc50c)
+출처 : https://neetcode.io/courses/dsa-for-beginners/2
 
 ## 삽입
 
@@ -93,10 +96,14 @@ public void insertMiddle(int[] arr, int i, int n, int length) {
 }
 ```
 
-![img_5.png](img_5.png)
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/97e82f30-4181-4a60-b74f-836218de4a45)
+출처 : https://neetcode.io/courses/dsa-for-beginners/2
 
 | 동작 | 시간 복잡도 | 특이사항                 |
 |----|--------|----------------------|
 | 접근 | O(1)   |                      |
 | 삽입 | O(n)   | 가장 끝에 삽입할 경우 O(1)    |
 | 삭제 | O(n)   | 가장 끝의 요소 삭제할 경우 O(1) |
+
+### reference
+- https://neetcode.io/courses/dsa-for-beginners/2
