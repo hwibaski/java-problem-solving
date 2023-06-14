@@ -46,3 +46,4 @@
 2. [📌 공통원소 구하기](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/twopointerandslidingwindow/_02)
 3. [📌 최대 매출](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/twopointerandslidingwindow/_03)
 3. [📌 연속 부분수열](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/twopointerandslidingwindow/_04)
+3. [연속된 자연수의 합](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/twopointerandslidingwindow/_05)
