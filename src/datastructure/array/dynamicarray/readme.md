@@ -49,7 +49,8 @@ doubling을 하지 않을 때는 O(1)의 시간 복잡도를 가지고 doubling�
 ![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/46c13116-4d14-47d7-a379-da6571b06f60)
 출처 : https://neetcode.io/courses/dsa-for-beginners/3
 
-![img_1.png](img_1.png)
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/78457b8d-5dcc-46dd-87c5-55e42df4ab56)
+
 출처 : https://neetcode.io/courses/dsa-for-beginners/3
 
 | 동작 | 시간 복잡도 | 특이사항              |
