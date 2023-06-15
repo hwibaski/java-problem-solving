@@ -7,8 +7,14 @@
 동적 배열은 배열의 공간이 부족할 때 스스로 공간을 늘립니다. 다만 기존에 있던 배열의 크기는 느릴 수 없으므로 새로운 배열을 기존 배열의 크기의 2배 만큼 할당하고 기존의 데이터들을 새로운 데이터로 이동시킵니다.
 
 이 동작은 분할상환시간 O(1) - Amortized O(1)이 소요됩니다.
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/4782754a-d7f0-4148-badc-f67719076f79)
 
 출처 : https://neetcode.io/courses/dsa-for-beginners/3
+
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/330f15cd-b358-47c2-8866-06c8cae0d96c)
+
+출처 : https://neetcode.io/courses/dsa-for-beginners/3
+
 
 ## Amortized Analysis란?
 
@@ -40,7 +46,11 @@ doubling을 하지 않을 때는 O(1)의 시간 복잡도를 가지고 doubling�
 
 즉 요소 삽입 시 정적 배열보다는 아니지만 충분히 빠른 성능을 보장할 수 있습니다.
 
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/46c13116-4d14-47d7-a379-da6571b06f60)
+출처 : https://neetcode.io/courses/dsa-for-beginners/3
+
 ![img_1.png](img_1.png)
+출처 : https://neetcode.io/courses/dsa-for-beginners/3
 
 | 동작 | 시간 복잡도 | 특이사항              |
 |----|--------|-------------------|
