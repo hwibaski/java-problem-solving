@@ -35,4 +35,19 @@ public class Main {
 
         System.out.println(ans);
     }
+
+    public void teacherSolution(int n) {
+        int answer = 0;
+        int cnt = 1;
+        n--;
+        while (n > 0) {
+            cnt++;
+            n = n - cnt;
+            if (n % cnt == 0) {
+                answer++;
+            }
+        }
+
+        System.out.println(answer);
+    }
 }
