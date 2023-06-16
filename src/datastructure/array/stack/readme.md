@@ -52,7 +52,7 @@ pop은 스택의 맨 위에서 마지막 요소를 제거하는 동작입니다.
 ```java
 public int peek(){
         return stack.get(stack.size()-1);
-        }
+}
 ```
 
 peek은 top 포인터가 가리키고 있는 요소를 리턴합니다. 즉, 스택의 가장 위에 있는 요소를 리턴합니다.
