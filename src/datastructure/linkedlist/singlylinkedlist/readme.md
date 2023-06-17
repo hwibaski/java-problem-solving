@@ -36,9 +36,13 @@ ListNode1.next=ListNode2;
 
 ```java
 ListNode1.next=ListNode2;
-        ListNode2.next=ListNode3;
-        ListNode3.next=null;
+ListNode2.next=ListNode3;
+ListNode3.next=null;
 ```
+
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/dfc3059c-a18a-4f67-9995-80931a48773b)
+출처 : https://neetcode.io/courses/dsa-for-beginners/5
+
 
 ## 탐색
 
@@ -46,14 +50,21 @@ ListNode1.next=ListNode2;
 
 ```java
 ListNode cur=ListNode1;
-        while(cur!=null){
-        cur=cur.next;
-        }
+while(cur!=null){
+    cur=cur.next;
+}
 ```
+
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/28d48cb2-17f0-4251-b6f7-01a2a5622ab3)
+출처 : https://neetcode.io/courses/dsa-for-beginners/5
+
 
 ## 순환 링크드 리스트 (Circular Linked List)
 
 링크드 리스트의 가장 마지막 요소가 null 대신 가장 첫번째 요소를 가리키게 되면 탐색 시 무한 루프가 발생하게 되고 적절한 조치를 하지 않으면 프로그램이 크래쉬될 것입니다.
+
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/33322ca5-02d3-48cb-9105-280adc2a49d3)
+출처 : https://neetcode.io/courses/dsa-for-beginners/5
 
 ## 링크드 리스트의 동작들
 
@@ -65,13 +76,38 @@ ListNode cur=ListNode1;
 링크드 링스트의 큰 장점 중 하나는 어느 위치에 요소를 추가하던 O(1)의 시간 복잡도를 가진다는 점입니다. 링크드 리스트의 요소들은 포인터로 연결되어 있기 때문에 포인터만 변경해주면 됩니다.
 배열에서 그러했던 것처럼 중간에 요소 삽입 시 이후의 요소들을 하나씩 밀어주지 않아도 된다는 뜻입니다.
 
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/9d05f484-f3ba-47ff-88e6-3e1db66a84c0)
+출처 : https://neetcode.io/courses/dsa-for-beginners/5
+```java
+tail.next = ListNode4;
+```
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/b33c8dba-54a6-4b2a-94ce-f61bd00a3883)
+출처 : https://neetcode.io/courses/dsa-for-beginners/5
+
+```java
+tail = ListNode4;
+```
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/4e117f68-fc22-40c1-a2fe-8e2fb2f076da)
+출처 : https://neetcode.io/courses/dsa-for-beginners/5
+
+
 > 순수하게 요소를 추가하는 동작에만 O(1)이고 그 요소를 찾는 데는 O(n)이 소요된다는 것을 잊으면 안됩니다! 링크드 리스트는 인덱스가 없으므로 해당 요소에 바로 접근할 수 없음을 유의해야합니다.
 
 ### 요소 삭제
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/419605ea-4654-4eff-b7a7-26b5b09f6928)
+출처 : https://neetcode.io/courses/dsa-for-beginners/5
+
 
 ```java
 head.next=head.next.next;
 ```
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/ee822b74-6db2-45a3-a48d-bbca41a0082c)
+출처 : https://neetcode.io/courses/dsa-for-beginners/5
+
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/81a13c02-99cc-4994-9912-14e88a773d8f)
+출처 : https://neetcode.io/courses/dsa-for-beginners/5
+
+
 
 삭제도 삽입과 마찬가지로 포인터들의 변경으로 간단하게 구현이 가능하고 이 역시 요소들을 하나하나 재배치하지 않아도 되므로 O(1)의 시간복잡도를 가지게 됩니다.
 
