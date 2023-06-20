@@ -21,11 +21,18 @@
 
 Enqueue는 tail에 요소를 추가하는 것입니다. 링크드 리스트로 구현 시 요소들의 이동 또한 필요 없으므로 O(1)의 시간 복잡도를 가집니다.
 
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/f5e1c213-7506-4a76-87d7-71c17fd8f345)
+출처 : https://neetcode.io/courses/dsa-for-beginners/7
+
+
 ### Dequeue(가장 앞에 요소 제거)
 
 Dequeue는 가장 앞의 요소를 제거하고 이를 리턴하는 것입니다. 큐가 만약에 dynamic array로 구현되었다면 이 동작을 할 시 O(n)의 시간복잡도를 가질 것입니다.
 
 하지만 링크드 리스트로 구현 시에는 O(1)의 시간 복잡도를 가집니다
+
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/35e75bb7-ecea-41bc-92ca-7176a063f110)
+출처 : https://neetcode.io/courses/dsa-for-beginners/7
 
 > 대기열의 변형인 양쪽 끝 대기열인 deque("데크"로 발음)라는 대기열도 있습니다. Deque를 사용하면 머리와 꼬리 모두에서 요소를 추가하고 제거할 수 있습니다
 
