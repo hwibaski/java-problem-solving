@@ -7,7 +7,7 @@
 재귀 함수는 두 가지 부분으로 이루어져 있습니다.
 
 1. The base case (기저 조건)
-2. 자기 자신이 받은 인풋과 다른 인풋으로 함수 자신이 스스로를 호출하는 부분
+2. 자기 자신이 받은 input(parameter)과는 다른 input으로 함수 자신이 스스로를 호출하는 부분
 
 ## About
 
@@ -27,15 +27,18 @@ n!은 n에서 1까지의 모든 숫자의 누적 곱을 나타내는 간단한 �
 
 ```java
 public int factorial(int n){
-        // 기저 조건: n = 0 or 1
-        if(n<=1){
+    // 기저 조건: n = 0 or 1
+    if(n<=1){
         return 1;
-        }
-        // 재귀파트: n! = n * (n - 1)!
-        return n*factorial(n-1);
-        }
-
+    }
+    // 재귀파트: n! = n * (n - 1)! <- 자기 자신이 받은 input 보다 -1을 하여 스스로를 다시 호출
+    return n*factorial(n-1);
+}
 ```
+
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/65bf7811-007d-47a5-be71-f901b34d66e0)
+출처 : https://neetcode.io/courses/dsa-for-beginners/8
+
 
 > 재귀 함수의 기저 조건을 빼먹으면 재귀함수는 무한으로 호출 됩니다. 그리고 이는 stack overflow를 발생시킵니다.
 
