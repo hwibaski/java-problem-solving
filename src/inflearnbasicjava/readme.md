@@ -55,3 +55,4 @@
 2. [아나그램](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/hashmapandtreeset/_02)
 3. [📌 매출액의 종류](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/hashmapandtreeset/_03)
 4. [📌 모든 아나그램 찾기](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/hashmapandtreeset/_04)
+4. [📌 K번째 큰 수](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/hashmapandtreeset/_05)
