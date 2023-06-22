@@ -60,3 +60,4 @@
 ## Stack and queue
 
 1. [올바른 괄호](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/stackqueue/_01)
+2. [괄호 문자 제거](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/stackqueue/_02)
