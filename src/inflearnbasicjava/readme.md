@@ -59,4 +59,4 @@
 
 ## Stack and queue
 
-1. [올바른 괄호](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/stackandqueue/_01)
+1. [올바른 괄호](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/stackqueue/_01)
