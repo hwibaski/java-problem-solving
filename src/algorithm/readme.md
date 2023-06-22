@@ -9,3 +9,4 @@
 ### Recursion
 
 1. [factorial](https://github.com/hwibaski/java-problem-solving/tree/main/src/algorithm/recursion/factorial)
+2. [fibonacci](https://github.com/hwibaski/java-problem-solving/tree/main/src/algorithm/recursion/fibonacci)
