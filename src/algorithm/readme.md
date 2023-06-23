@@ -10,3 +10,7 @@
 
 1. [factorial](https://github.com/hwibaski/java-problem-solving/tree/main/src/algorithm/recursion/factorial)
 2. [fibonacci](https://github.com/hwibaski/java-problem-solving/tree/main/src/algorithm/recursion/fibonacci)
+
+### Sorting
+
+1. [insertion sort](https://github.com/hwibaski/java-problem-solving/blob/main/src/algorithm/sorting/insertion)
