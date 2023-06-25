@@ -4,7 +4,8 @@
 
 하위 배열의 크기가 1이 될 때까지 배열을 계속 반으로 분할하고, 정렬하고, 정렬된 배열을 병합하면 최종 정렬된 배열이 만들어집니다.
 
-![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/f8a9de85-5826-4ae8-9375-aa8b12f5dc87)
+![Screen-Recording-2023-06-25-at-11 49 20-PM](https://github.com/hwibaski/java-problem-solving/assets/85930725/f142c5b5-473d-4498-9f03-80c6f6b50833)
+
 
 출처 : https://visualgo.net/en/sorting
 
