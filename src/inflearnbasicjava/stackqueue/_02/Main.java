@@ -1,4 +1,4 @@
-package inflearnbasicjava.stackqueue._02.readme;
+package inflearnbasicjava.stackqueue._02;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,7 +16,7 @@ public class Main {
     public void solution(String s) {
         List<Character> list = new ArrayList<>();
         Stack<Character> stack = new Stack<>();
-        
+
         for (char c : s.toCharArray()) {
             if (c == '(') {
                 stack.push(c);
