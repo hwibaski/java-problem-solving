@@ -4,6 +4,11 @@
 
 하위 배열의 크기가 1이 될 때까지 배열을 계속 반으로 분할하고, 정렬하고, 정렬된 배열을 병합하면 최종 정렬된 배열이 만들어집니다.
 
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/f8a9de85-5826-4ae8-9375-aa8b12f5dc87)
+
+출처 : https://visualgo.net/en/sorting
+
+
 ## 개념
 
 우리가 정렬하려는 배열의 크기는 5이고 [3, 2, 4, 1, 6] 이렇게 생겼습니다.
@@ -17,18 +22,21 @@
 이를 위해 두 하위 배열의 복사본을 생성하고 투포인터를 사용하여 값을 비교하고 정렬된 순서대로 원래 하위 배열에 넣습니다.
 
 ```java
-public static int[]mergeSort(int[]arr,int l,int r){ // array, array의 시작 인덱스, array의 끝 인덱스
-        if(l<r){
+public static int[] mergeSort(int[]arr,int l,int r){ // array, array의 시작 인덱스, array의 끝 인덱스
+    if (l < r) {
         // array의 중간 지점 찾기
-        int m=(l+r)/2;
+        int m =(l + r) / 2;
 
-        mergeSort(arr,l,m);   // array의 왼쪽 부분 정렬
-        mergeSort(arr,m+1,r); // array의 오른쪽 부분 정렬
-        merge(arr,l,m,r);    // 정렬된 반반을 병합
-        }
-        return arr;
-        } 
+        mergeSort(arr, l, m);   // array의 왼쪽 부분 정렬
+        mergeSort(arr, m + 1, r); // array의 오른쪽 부분 정렬
+        merge(arr, l, m, r);    // 정렬된 반반을 병합
+    }
+    return arr;
+} 
 ```
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/74df0a45-1dec-4786-99ea-dc5ad64372d3)
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/9a2eb3a6-ba4f-476b-b74c-c0258ba8b3e8)
+
 
 출처 : https://neetcode.io/courses/dsa-for-beginners/11
 
@@ -45,64 +53,61 @@ merge() 함수는 세 개의 포인터를 가지고 있습니다.
 // 첫 번째 서브 배열은 arr[l..m]
 // 두 번째 서브 배열은 arr[m+1..r]
 public static void merge(int[]arr,int l,int m,int r){
-        // l : arr의 시작 idx
-        // m: 중간 idx
-        // r: arr의 마지막 idx
+// l : arr의 시작 idx
+// m: 중간 idx
+// r: arr의 마지막 idx
 
-        // 두 개의 서브 배열의 길이를 구한다.
-        int length1=m-l+1;
-        int length2=r-m;
+// 두 개의 서브 배열의 길이를 구한다.
+int length1 = m - l + 1;
+int length2 = r - m;
 
-        // 두 개의 임시 배열을 만든다.
-        int[]left=new int[length1];
-        int[]left=new int[length2];
+// 두 개의 임시 배열을 만든다.
+int[] left = new int[length1];
+int[] left = new int[length2];
 
-        // Copy the sorted left & right halfs to temp arrays
+// 만든 임시 배열에 왼쪽 & 오른쪽 배열의 값을 복사한다.
+for(int i = 0; i < length1; i++){
+    left[i] = arr[l + i];
+}
 
-        // 만든 임시 배열에 왼쪽 & 오른쪽 배열의 값을 복사한다.
-        for(int i=0;i<length1; i++){
-        left[i]=arr[l+i];
-        }
+for(int j = 0; j < length2; j++){
+    right[j] = arr[m + 1 + j];
+}
 
-        for(int j=0;j<length2; j++){
-        right[j]=arr[m+1+j];
-        }
+// left 배열을 가리킬 포인터, right 배열을 가리키 포인터를 초기화
+int i=0; // left 배열을 위한 포인터
+int j=0; // right 배열을 위한 포인터
+int k=l; // arr(원본 배열)을 가리킬 포인터
 
-        // left 배열을 가리킬 포인터, right 배열을 가리키 포인터를 초기화
-        int i=0; // left 배열을 위한 포인터
-        int j=0; // right 배열을 위한 포인터
-        int k=l; // arr(원본 배열)을 가리킬 포인터
-
-        // 정렬된 두 개의 서브 배열을 원본 배열에 병합한다.
-        while(i<length1 &&j<length2){
-        // left 배열의 요소가 right 배열의 요소 보다 작거나 같으면
-        if(left[i]<=right[j]){
+// 정렬된 두 개의 서브 배열을 원본 배열에 병합한다.
+while(i < length1 && j < length2){
+// left 배열의 요소가 right 배열의 요소 보다 작거나 같으면
+    if(left[i] <= right[j]){
         arr[k]=left[i];
         i++;
-        }else{
+    } else {
         // right 배열의 요소가 left 배열의 요소 작으면
-        arr[k]=R[j];
+        arr[k] = right[j];
         j++;
-        }
-        k++;
-        }
+    }
+    k++;
+}
 
-        // left 배열과 right 배열의 길이가 다르다면 while 문의 조건문에서 비교가 안 된 요소들이 있을 수 있다.
-        // left  배열 요소 중에 남은 요소들을 원본 배열에 복사한다.
-        while(i<length1){
-        arr[k]=L[i];
-        i++;
-        k++;
-        }
+// left 배열과 right 배열의 길이가 다르다면 while 문의 조건문에서 비교가 안 된 요소들이 있을 수 있다.
+// left  배열 요소 중에 남은 요소들을 원본 배열에 복사한다.
+while(i < length1){
+    arr[k] = left[i];
+    i++;
+    k++;
+}
 
         // right 배열 요소 중에 남은 요소들을 원본 배열에 복사한다.
-        while(j<length2){
-        arr[k]=R[j];
-        j++;
-        k++;
-        }
-        }
-
+while(j < length2){
+    arr[k] = right[j];
+    j++;
+    k++;
+}
+}
 ```
 
 ## 시간 복잡도
@@ -137,10 +142,10 @@ https://neetcode.io/courses/dsa-for-beginners/11
 
 ```java
 // 왼쪽 서브 배열과 오른쪽 서브 배열의 크기가 같다면 왼쪽 서브 배열을 복사하기 때문에 안정성이 유지된다.
-if(leftSubarray[i]<=rightSubarray[j]){
-        arr[k]=leftSubarray[i];
-        i+=1;
-        }
+if(leftSubarray[i] <= rightSubarray[j]){
+    arr[k] = leftSubarray[i];
+    i+=1;
+}
 ```
 
 ## 삽입 정렬과의 비교
