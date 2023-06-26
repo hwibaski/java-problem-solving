@@ -15,3 +15,4 @@
 
 1. [insertion sort](https://github.com/hwibaski/java-problem-solving/blob/main/src/algorithm/sorting/insertion)
 2. [merge sort](https://github.com/hwibaski/java-problem-solving/blob/main/src/algorithm/sorting/merge)
+3. [quick sort](https://github.com/hwibaski/java-problem-solving/blob/main/src/algorithm/sorting/quick)
