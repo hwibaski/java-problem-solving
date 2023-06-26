@@ -59,6 +59,7 @@
 
 ## Stack and queue
 
-1. [올바른 괄호](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/stackqueue/_01)
-2. [괄호 문자 제거](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/stackqueue/_02)
-2. [크레인 인형뽑기](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/stackqueue/_03)
+1. [📌 올바른 괄호](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/stackqueue/_01)
+2. [📌 괄호 문자 제거](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/stackqueue/_02)
+3. [📌 크레인 인형뽑기](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/stackqueue/_03)
+4. [📌 후위식 연산](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/stackqueue/_04)
