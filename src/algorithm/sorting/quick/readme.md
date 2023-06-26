@@ -6,6 +6,9 @@ pivot이라고 불리는 index의 요소를 하나 선택합니다.
 
 그리고 pivot 보다 작거나 같은 요소들은 pivot의 왼편에 두고, pivot 보다 큰 요소들은 pivot의 오른편에 둡니다.
 
+![Screen-Recording-2023-06-26-at-11 40 39-AM](https://github.com/hwibaski/java-problem-solving/assets/85930725/a15e1048-07a3-49b6-8c3c-33c902e79750)
+
+(이 gif에서는 pivot을 첫 번째 요소로 지정했다.)
 출처 : https://visualgo.net/en/sorting
 
 ## pivot 선택하기
@@ -23,7 +26,7 @@ pivot이라고 불리는 index의 요소를 하나 선택합니다.
 
 재귀로 퀵정렬을 구현합니다. 병합 정렬과 비슷하게 정렬할 필요가 없는 서브 배열(길이가 1)이 나올 때 까지 퀵정렬을 재귀 호출할 것입니다.
 
-우선 pivot 포인터는 배열의 요소를 선택합니다.
+우선 pivot 포인터는 배열의 마지막 요소를 선택합니다.
 
 left pointer를 선택합니다. 이 포인터는 원본 배열의 제일 왼쪽 요소를 가리킵니다.
 
@@ -33,41 +36,44 @@ left pointer를 선택합니다. 이 포인터는 원본 배열의 제일 왼쪽
 
 left pointer 요소와 pivot pointer 요소를 스왑함으로써 pivot 포인터의 왼쪽에는 pivot보다 작거나 같은 요소들이 배치되고, 오른쪽에는 pivot보다 큰 요소들이 배치됩니다.
 
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/042e662f-4e7d-4a63-b34e-48f3d3aafe21)
+
 출처 : https://neetcode.io/courses/dsa-for-beginners/12
 
 > 중요한 점은 이 과정에서 새로운 메모리를 사용하지 않았습니다. 즉 서브 배열을 복사하거나 하지 않고 원본 배열에 바로 수정을 가했습니다.
 
 ```java
-public static int[]quickSort(int[]arr,int s,int e){
-        if(e-s+1<=1){
+public static int[] quickSort(int[] arr, int s, int e) {
+    if (e - s + 1 <= 1) {
         return arr;
+    }
+
+    int pivot = arr[e];
+    int left = s;       // left 포인터
+        
+    // Partition: pivot 보다 작은 값들은 left 포인터 가리키는 값과 swap 됩니다.
+    // arr[i]의 값이 pivot보다 작지만 left 포인터가 arr[i]를 가리키는 경우에는 자기 자신과 스왑됩니다.
+    for (int i = s; i < e; i++) {
+        if (arr[i] < pivot) {
+            int tmp = arr[left];
+            arr[left] = arr[i];
+            arr[i] = tmp;
+            left++;
         }
+    }
 
-        int pivot=arr[e];
-        int left=s;       // left 포인터
+    // pivot과 left 요소를 스왑합니다. 이로써 pivot의 왼편에는 pivot보다 작거나 같은 값들이, 오른편에는 큰 값들이 위치하게 됩니다.
+    arr[e] = arr[left];
+    arr[left] = pivot;
 
-        // Partition: elements smaller than pivot on left side
-        for(int i=s;i<e; i++){
-        if(arr[i]<pivot){
-        int tmp=arr[left];
-        arr[left]=arr[i];
-        arr[i]=tmp;
-        left++;
-        }
-        }
+    // pivot의 왼편들을 퀵정렬 합니다.
+    quickSort(arr, s, left - 1);
 
-        // Move pivot in-between left & right sides
-        arr[e]=arr[left];
-        arr[left]=pivot;
+    // pivot의 오른편들을 퀵정렬 합니다.
+    quickSort(arr, left + 1, e);
 
-        // Quick sort left side
-        quickSort(arr,s,left-1);
-
-        // Quick sort right side
-        quickSort(arr,left+1,e);
-
-        return arr;
-        }
+    return arr;
+}
 ```
 
 ## 시간 복잡도
