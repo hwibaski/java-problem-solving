@@ -64,3 +64,4 @@
 3. [📌 크레인 인형뽑기](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/stackqueue/_03)
 4. [📌 후위식 연산](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/stackqueue/_04)
 5. [📌 쇠막대기](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/stackqueue/_05)
+5. [📌 공주구하기](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/stackqueue/_06)
