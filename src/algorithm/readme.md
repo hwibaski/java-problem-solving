@@ -25,3 +25,6 @@
 | quick     | O(nlogn) | 가장 큰값이나 가장 작은 값을 pivot으로 삼을 경우 O(n^2), e.g. reverse ordered ([3, 2, 1] 배열) |
 | Bucekt    | O(n)     | 요소들의 범위가 정해져있어야함                                                           |
 
+### Binary Search
+
+1. [search array](https://github.com/hwibaski/java-problem-solving/blob/main/src/algorithm/binarysearch/searcharray)
