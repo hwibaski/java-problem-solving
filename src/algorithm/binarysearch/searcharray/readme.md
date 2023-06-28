@@ -22,10 +22,12 @@
 arr = [1,2,3,4,5,6,7,8]
 target = 5
 ```
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/e4366f06-d81a-4b87-aac0-050fc838c27e)
+
 
 출처 : https://neetcode.io/courses/dsa-for-beginners/14
 
-```text
+```java
 int[] arr = {1, 3, 3, 4, 5, 6, 7, 8};
 
 public static int binarySearch(int[] arr,  int target) {
@@ -50,6 +52,9 @@ public static int binarySearch(int[] arr,  int target) {
 > 오버플로우가 발생하지 않게 하기 위해서 int mid = L + ((R + L) / 2) 를 하거나 참고 문서에 나오는 코드들을 사용해도 됩니다.
 
 ## 타켓이 주어진 배열에 존재하지 않는 경우
+
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/bd962c32-83d0-4bc2-924e-b163537f73e9)
+
 
 출처 : https://neetcode.io/courses/dsa-for-beginners/14
 
