@@ -28,3 +28,4 @@
 ### Binary Search
 
 1. [search array](https://github.com/hwibaski/java-problem-solving/blob/main/src/algorithm/binarysearch/searcharray)
+2. [search range](https://github.com/hwibaski/java-problem-solving/blob/main/src/algorithm/binarysearch/searchrange)
