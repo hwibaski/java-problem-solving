@@ -16,7 +16,7 @@
 
 이 방법의 의사 코드는 다음과 같습니다:
 
-```text
+```java
 // n이 크다면 1을 return, 작다면 -1 리턴, n이 target과 같다면 0을 리턴
 public static int isCorrect(int n) {
     int target = 10;
@@ -32,7 +32,7 @@ public static int isCorrect(int n) {
 
 위의 헬퍼 메서드를 이용해서 이진 탐색을 할 수 있습니다.
 
-```text
+```java
 public static int binarySearch(int low, int high) {
     int mid;
 
