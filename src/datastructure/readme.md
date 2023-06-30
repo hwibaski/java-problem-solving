@@ -18,3 +18,7 @@
 1. [singly linked list](https://github.com/hwibaski/java-problem-solving/tree/main/src/datastructure/linkedlist/singlylinkedlist)
 2. [doubly linked list](https://github.com/hwibaski/java-problem-solving/tree/main/src/datastructure/linkedlist/doublylinkedlist)
 3. [queue](https://github.com/hwibaski/java-problem-solving/tree/main/src/datastructure/linkedlist/queue)
+
+### Tree
+
+1. [binary tree](https://github.com/hwibaski/java-problem-solving/tree/main/src/datastructure/tree/binarytree)
