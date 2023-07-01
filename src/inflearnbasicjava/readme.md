@@ -67,3 +67,7 @@
 6. [📌 공주구하기](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/stackqueue/_06)
 7. [교육과정설계](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/stackqueue/_07)
 8. [📌 응급실](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/stackqueue/_08)
+
+## Sorting and Searching
+
+1. [선택정렬](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/sortandsearch/_01)
