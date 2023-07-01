@@ -22,3 +22,4 @@
 ### Tree
 
 1. [binary tree](https://github.com/hwibaski/java-problem-solving/tree/main/src/datastructure/tree/binarytree)
+2. [binary search tree](https://github.com/hwibaski/java-problem-solving/tree/main/src/datastructure/tree/binarysearchtree)
