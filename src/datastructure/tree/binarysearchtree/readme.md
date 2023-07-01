@@ -38,9 +38,12 @@ BST에서는 삽입과 삭제가 O(logn)의 시간 복잡도를 가집니다. �
 
 그렇기 때문에 현재 노드가 목표인 3보다 작으면 오른쪽으로 이동하고 현재 노드가 목표보다 크면 왼쪽으로 이동할 수 있습니다.
 
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/6f252a90-704c-4305-b4a0-228bc04ee7cc)
+
+
 - 출처 : https://neetcode.io/courses/dsa-for-beginners/17
 
-```text
+```java
 public boolean search(TreeNode root, int target) {
     if (root == null) {
         return false;
