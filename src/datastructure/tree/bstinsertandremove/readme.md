@@ -16,7 +16,7 @@ BST에 새 노드를 삽입하기 위해서는 BST를 탐색하며 올바른 위
 
 두 개의 방법 모두 BST에서 유효한 방법입니다만 첫 번째 방법이 조금 더 간단한 방법이므로 이 방법을 살펴보겠습니다.
 
-```text
+```java
 // Insert a new node and return the root of the BST.
 public TreeNode insert(TreeNode root, int val) {
     if (root == null) {
@@ -31,8 +31,17 @@ public TreeNode insert(TreeNode root, int val) {
     return root;
 }
 ```
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/dcbf8c9e-c79a-4e16-8589-cf387227cdbb)
+
 
 - 출처 : https://neetcode.io/courses/dsa-for-beginners/18
+
+### insert(4, 6)
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/5b9d09bd-64a5-420f-8b0f-e768a8026a78)
+
+### insert(4, 5)
+![img_1](https://github.com/hwibaski/java-problem-solving/assets/85930725/48ed2d9b-6fe7-40df-b778-d889a35436b6)
+
 
 ## 삭제
 
@@ -45,38 +54,9 @@ BST에서 노드를 삭제하기전 우리는 두 가지 경우를 살펴봐야�
 3. 삭제하려는 노드의 자식이 두 개인 경우
     - -> 오른쪽 서브 트리의 MIN 값 OR 왼쪽 서브 트리의 MAX 값 중 하나를 삭제할 노드의 위치로 끌어올림
 
-### Case 1 - 삭제하려는 노드의 자식이 하나이거나 또는 없는 경우
+```java
+// 삭제할 노드의 오른쪽자식 중에서 가장 작은 값을 찾아삭제할 노드를 대체하는 방식 
 
-아래의 그림에서 자식이 없는 노드인 2를 지우려면 3의 left 포인터를 null로 만들면 됩니다.
-
-또는 자식이 하나인 3을 지우려면 root 노드의 포인터를 3대신 2를 가리키게 하면 됩니다.
-
-- 출처 : https://neetcode.io/courses/dsa-for-beginners/18
-
-### Case 2 - 삭제하려는 노드의 자식이 두 개인 경우
-
-우리가 6 노드를 지우고 싶다고 가정하겠습니다.
-
-이 경우에는 상황이 조금 복잡합니다. 6 노드 자리를 다른 노드가 대체하여야 합니다.
-
-어떤 노드가 6 노드의 자리를 대체할 수 있을까요?
-
-1. 오른쪽자식 중에서 가장 작은 값을 6자리로 옮긴다
-    - 삭제 대상의 오른쪽 트리 중 가장 왼쪽에 있는 값을 찾아 6 자리로 옮긴다.
-
-2. 왼쪽 자식 중에서 가장 큰 값을 6자리로 옮긴다.
-    - 삭제 대상의 왼쪽 트리 중 가장 큰 값을 찾아 6 자리로 옮긴다.
-
-두 개의 방법 모두 이진트리의 구조를 충족시킵니다.
-
-아래의 그림에서는 2번 방법이 사용되었습니다.
-
-왼쪽 자식 중에서 가장 큰 값은 5이므로 5를 6의 자리로 대체시킵니다.
-
-- 출처 : https://neetcode.io/courses/dsa-for-beginners/18
-
-```text
-// 1번 방법 구현 코드
 // Return the minimum value node of the BST.
 public TreeNode minValueNode(TreeNode root) {
     TreeNode curr = root;
@@ -109,6 +89,59 @@ public TreeNode remove(TreeNode root, int val) {
     return root;
 }    
 ```
+
+### Case 1 - 삭제하려는 노드의 자식이없는 경우
+
+아래의 그림에서 자식이 없는 노드인 2를 지우려면 3의 left 포인터를 null로 만들면 됩니다.
+
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/2db4cda6-e8ee-4a5b-a278-182b86570bff)
+- 출처 : https://neetcode.io/courses/dsa-for-beginners/18
+
+#### remove(4, 2)
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/0ecfbfd4-5e23-425b-b6ef-9de883ed57fa)
+
+
+### Case 2 - 삭제히려는 노드의 자식이 하나인 경우
+
+또는 자식이 하나인 3을 지우려면 root 노드의 포인터를 3대신 2를 가리키게 하면 됩니다.
+
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/55a9ff0c-90d0-41ff-9609-016ed6ae794b)
+
+- 출처 : https://neetcode.io/courses/dsa-for-beginners/18
+
+#### remove(4, 3)
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/f6f9df5f-40e6-4a27-9f83-76e0514603d0)
+
+### Case 3 - 삭제하려는 노드의 자식이 두 개인 경우
+
+우리가 6 노드를 지우고 싶다고 가정하겠습니다.
+
+이 경우에는 상황이 조금 복잡합니다. 6 노드 자리를 다른 노드가 대체하여야 합니다.
+
+어떤 노드가 6 노드의 자리를 대체할 수 있을까요?
+
+1. 오른쪽자식 중에서 가장 작은 값을 6자리로 옮긴다
+    - 삭제 대상의 오른쪽 트리 중 가장 왼쪽에 있는 값을 찾아 6 자리로 옮긴다.
+
+2. 왼쪽 자식 중에서 가장 큰 값을 6자리로 옮긴다.
+    - 삭제 대상의 왼쪽 트리 중 가장 큰 값을 찾아 6 자리로 옮긴다.
+
+두 개의 방법 모두 이진트리의 구조를 충족시킵니다.
+
+아래의 그림에서는 2번 방법이 사용되었습니다.
+
+왼쪽 자식 중에서 가장 큰 값은 5이므로 5를 6의 자리로 대체시킵니다.
+
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/cca9715d-6f4a-4123-919a-79ff759e4767)
+
+- 출처 : https://neetcode.io/courses/dsa-for-beginners/18
+
+#### remove(4, 6)
+
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/b6e4c56d-0d2b-4c3e-82b0-65962a845283)
+
+
+
 
 ## 시간 복잡도
 
