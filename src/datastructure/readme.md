@@ -23,3 +23,4 @@
 
 1. [binary tree](https://github.com/hwibaski/java-problem-solving/tree/main/src/datastructure/tree/binarytree)
 2. [binary search tree](https://github.com/hwibaski/java-problem-solving/tree/main/src/datastructure/tree/binarysearchtree)
+3. [binary search tree insert and delete](https://github.com/hwibaski/java-problem-solving/tree/main/src/datastructure/tree/bstinsertandremove)
