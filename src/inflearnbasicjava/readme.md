@@ -72,3 +72,4 @@
 
 1. [선택정렬](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/sortandsearch/_01)
 2. [버블정렬](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/sortandsearch/_02)
+3. [삽입정렬](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/sortandsearch/_03)
