@@ -1,4 +1,4 @@
-# Factorial - Recrusion(One Branch)
+# Factorial - Recursion(One Branch)
 
 재귀는 함수가 더 작은 출력으로 스스로를 호출하는 것을 말합니다.
 
