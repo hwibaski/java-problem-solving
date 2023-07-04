@@ -18,30 +18,31 @@ BST에 새 노드를 삽입하기 위해서는 BST를 탐색하며 올바른 위
 
 ```java
 // Insert a new node and return the root of the BST.
-public TreeNode insert(TreeNode root, int val) {
-    if (root == null) {
+public TreeNode insert(TreeNode root,int val){
+        if(root==null){
         return new TreeNode(val);
-    }
+        }
 
-    if (val > root.val) {
-        root.right = insert(root.right, val);
-    } else  if (val < root.val) {
-        root.left = insert(root.left, val);
-    }
-    return root;
-}
+        if(val>root.val){
+        root.right=insert(root.right,val);
+        }else if(val<root.val){
+        root.left=insert(root.left,val);
+        }
+        return root;
+        }
 ```
-![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/dcbf8c9e-c79a-4e16-8589-cf387227cdbb)
 
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/dcbf8c9e-c79a-4e16-8589-cf387227cdbb)
 
 - 출처 : https://neetcode.io/courses/dsa-for-beginners/18
 
 ### insert(4, 6)
+
 ![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/5b9d09bd-64a5-420f-8b0f-e768a8026a78)
 
 ### insert(4, 5)
-![img_1](https://github.com/hwibaski/java-problem-solving/assets/85930725/48ed2d9b-6fe7-40df-b778-d889a35436b6)
 
+![img_1](https://github.com/hwibaski/java-problem-solving/assets/85930725/48ed2d9b-6fe7-40df-b778-d889a35436b6)
 
 ## 삭제
 
@@ -58,36 +59,36 @@ BST에서 노드를 삭제하기전 우리는 두 가지 경우를 살펴봐야�
 // 삭제할 노드의 오른쪽자식 중에서 가장 작은 값을 찾아삭제할 노드를 대체하는 방식 
 
 // Return the minimum value node of the BST.
-public TreeNode minValueNode(TreeNode root) {
-    TreeNode curr = root;
-    while(curr != null && curr.left != null) {
-        curr = curr.left;
-    }
-    return curr;
-}
+public TreeNode minValueNode(TreeNode root){
+        TreeNode curr=root;
+        while(curr!=null&&curr.left!=null){
+        curr=curr.left;
+        }
+        return curr;
+        }
 
 // Remove a node and return the root of the BST.
-public TreeNode remove(TreeNode root, int val) {
-    if (root == null) {
+public TreeNode remove(TreeNode root,int val){
+        if(root==null){
         return null;
-    }
-    if (val > root.val) {
-        root.right = remove(root.right, val);
-    } else if (val < root.val) {
-        root.left = remove(root.left, val);
-    } else {
-        if (root.left == null) {
-            return root.right;
-        } else if (root.right == null) {
-            return root.left;
-        } else {
-            TreeNode minNode = minValueNode(root.right);
-            root.val = minNode.val;
-            root.right = remove(root.right, minNode.val);
         }
-    }
-    return root;
-}    
+        if(val>root.val){
+        root.right=remove(root.right,val);
+        }else if(val<root.val){
+        root.left=remove(root.left,val);
+        }else{
+        if(root.left==null){
+        return root.right;
+        }else if(root.right==null){
+        return root.left;
+        }else{
+        TreeNode minNode=minValueNode(root.right);
+        root.val=minNode.val;
+        root.right=remove(root.right,minNode.val);
+        }
+        }
+        return root;
+        }    
 ```
 
 ### Case 1 - 삭제하려는 노드의 자식이없는 경우
@@ -95,11 +96,12 @@ public TreeNode remove(TreeNode root, int val) {
 아래의 그림에서 자식이 없는 노드인 2를 지우려면 3의 left 포인터를 null로 만들면 됩니다.
 
 ![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/2db4cda6-e8ee-4a5b-a278-182b86570bff)
+
 - 출처 : https://neetcode.io/courses/dsa-for-beginners/18
 
 #### remove(4, 2)
-![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/0ecfbfd4-5e23-425b-b6ef-9de883ed57fa)
 
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/0ecfbfd4-5e23-425b-b6ef-9de883ed57fa)
 
 ### Case 2 - 삭제히려는 노드의 자식이 하나인 경우
 
@@ -110,6 +112,7 @@ public TreeNode remove(TreeNode root, int val) {
 - 출처 : https://neetcode.io/courses/dsa-for-beginners/18
 
 #### remove(4, 3)
+
 ![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/f6f9df5f-40e6-4a27-9f83-76e0514603d0)
 
 ### Case 3 - 삭제하려는 노드의 자식이 두 개인 경우
@@ -139,9 +142,6 @@ public TreeNode remove(TreeNode root, int val) {
 #### remove(4, 6)
 
 ![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/b6e4c56d-0d2b-4c3e-82b0-65962a845283)
-
-
-
 
 ## 시간 복잡도
 
