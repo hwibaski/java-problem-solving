@@ -27,3 +27,7 @@
 4. [Depth-First Search](https://github.com/hwibaski/java-problem-solving/tree/main/src/datastructure/tree/depthfirstsearch)
 5. [Breadth-First Search](https://github.com/hwibaski/java-problem-solving/tree/main/src/datastructure/tree/breadthfirstsearch)
 6. [BST Sets and Maps](https://github.com/hwibaski/java-problem-solving/tree/main/src/datastructure/tree/bstsetsandmaps)
+
+### Backtracking
+
+1. [Tree Maze](https://github.com/hwibaski/java-problem-solving/tree/main/src/datastructure/backtracking/treemaze)
