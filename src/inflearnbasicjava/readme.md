@@ -76,3 +76,4 @@
 4. [LRU](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/sortandsearch/_04)
 5. [중복확인](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/sortandsearch/_05)
 6. [장난꾸러기](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/sortandsearch/_06)
+7. [📌 좌표정렬](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/sortandsearch/_07)
