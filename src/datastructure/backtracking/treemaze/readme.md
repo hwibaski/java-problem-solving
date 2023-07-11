@@ -31,7 +31,7 @@
 
 트리가 [4,0,1,null,7,2,0]이라고 가정할 때 유효한 경로는 그림과 같이 다음과 같습니다. 경로에 0이 포함되어 있으면 유효하지 않은 경로입니다.
 
-```text
+```java
 public class TreeNode {
 
     public int val;
@@ -69,6 +69,9 @@ public boolean canReachLeaf(TreeNode root) {
 }
 ```
 
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/bd8e85a1-5fcd-4e21-8ca0-7652860c89f6)
+
+
 - 출처 : https://neetcode.io/courses/dsa-for-beginners/22
 
 문제를 조금 변경해보겠습니다.
@@ -98,9 +101,12 @@ public boolean canReachLeaf(TreeNode root) {
 17. 리스트에 노드(2)를 추가합니다.
 18. 노드(2)의 왼쪽 자식과 오른쪽 자식이 모두 null이면 true를 리턴합니다.
 
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/87d118e8-cc52-47de-9210-a1db3dfa439d)
+
+
 - 출처 : https://neetcode.io/courses/dsa-for-beginners/22
 
-```text
+```java
 public boolean leafPath(TreeNode root, ArrayList<Integer> path) {
     if (root == null || root.val == 0) {
         return false;
