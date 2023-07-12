@@ -77,3 +77,4 @@
 5. [중복확인](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/sortandsearch/_05)
 6. [장난꾸러기](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/sortandsearch/_06)
 7. [📌 좌표정렬](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/sortandsearch/_07)
+8. [📌이분 검색](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/sortandsearch/_08)
