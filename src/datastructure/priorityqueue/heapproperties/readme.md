@@ -21,17 +21,23 @@
 
 일반적인 이진 트리가 힙이 되기 위해서는 다음 속성을 충족해야 합니다
 
-1. Structure Property
+`1. Structure Property`
 
 바이너리 힙은 최하위 레벨 노드를 제외하고 트리의 모든 레벨이 완전히 채워지는 완전 이진 트리입니다.
 
-2. Order Property
+`2. Order Property`
 
 최소 힙의 순서에 관한 특성은 모든 자손 노드가 조상보다 크거냐 같아야 한다는 것입니다.
 
 다시 말해 특정 노드 y를 조상으로 하는 자손 노드들은 모두 y보다 크거나 같아야 합니다.
 
 최대힙은 그 반대로 모든 자손 노드가 조상 노드보다 작거나 같아야 합니다.
+
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/7039cd93-4d70-4d5c-907d-13226746d4e3)
+
+
+
+
 
 - 출처 : https://neetcode.io/courses/dsa-for-beginners/23
 
@@ -44,25 +50,36 @@
 1. 우리는 주어진 노드 n개 보다 하나 큰 n + 1 사이즈의 배열을 만듭니다.
 2. BFS와 비슷한 방법으로 루트 노드부터 아래로 값을 채워나갑니다.
 3. 단, 배열의 0번째가 아닌 1번째부터 채워나갑니다.
-
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/8d46dc6d-ab40-439d-9303-5ca56b40a93d)
 - 출처 : https://neetcode.io/courses/dsa-for-beginners/23
 
 인덱스 1부터 배열을 채우기 시작하는 이유는 노드의 왼쪽 자식, 오른쪽 자식 또는 부모가 있는 인덱스를 파악하는 데 도움이 되기 때문입니다.
 바이너리 힙은 완전한 바이너리 트리이므로 포인터를 위한 공간이 필요하지 않습니다.
 대신, 노드의 왼쪽 자식, 오른쪽 자식 및 부모는 다음 공식을 사용하여 계산할 수 있습니다. 여기서 i는 주어진 노드의 인덱스입니다.
 
-leftChild = 2 * i
-rightChild = 2 * i + 1
-parent = i / 2
+`leftChild = 2 * i`
+
+`rightChild = 2 * i + 1`
+
+`parent = i / 2`
+
+
+
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/4939420d-a20f-4287-a9b1-b2cfb2bc3c21)
+
 
 - 출처 : https://neetcode.io/courses/dsa-for-beginners/23
 
 그림에서 19의 인덱스i는 2 입니다.
-19의 부모 인덱스는 i / 2, 즉 1이고, 그 자리에는 14가 있습니다.
-19의 양쪽 자식을 구해보겠습니다.
-우선 왼쪽 자식은 2 * i, 즉 4 이고, 그 자리에는 21이 있습니다. 또한 오른쪽 자식은 2 * i + 1이고, 그 값은 5이며 그 자리에는 26이 있습니다.
 
-```text
+19의 부모 인덱스는 i / 2, 즉 1이고, 그 자리에는 14가 있습니다.
+
+19의 양쪽 자식을 구해보겠습니다.
+
+우선 왼쪽 자식은 2 * i, 즉 4 이고, 그 자리에는 21이 있습니다.
+또한 오른쪽 자식은 2 * i + 1이고, 그 값은 5이며 그 자리에는 26이 있습니다.
+
+```java
 public class Heap {
     
     List<Integer> heap;
