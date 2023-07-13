@@ -31,3 +31,7 @@
 ### Backtracking
 
 1. [Tree Maze](https://github.com/hwibaski/java-problem-solving/tree/main/src/datastructure/backtracking/treemaze)
+
+### Heap / Priority Queue
+
+1. [Heap Properties](https://github.com/hwibaski/java-problem-solving/tree/main/src/datastructure/priorityqueue/heapproperties)
