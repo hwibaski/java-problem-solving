@@ -79,3 +79,4 @@
 7. [📌 좌표정렬](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/sortandsearch/_07)
 8. [📌이분 검색](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/sortandsearch/_08)
 9. [📌뮤직비디오(결정 알고리즘)](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/sortandsearch/_09)
+10. [📌마구간 정하기(결정 알고리즘)](https://github.com/hwibaski/java-problem-solving/tree/main/src/inflearnbasicjava/sortandsearch/_10)
