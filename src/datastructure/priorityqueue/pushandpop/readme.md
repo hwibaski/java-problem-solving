@@ -20,7 +20,7 @@
 2. 스왑 후 다시 부모 노드를 확인합니다.
 3. 부모 노드인 19 역시 17보다 크기 때문에 스왑합니다.
 
-```text
+```java
 public void push(int val) {
     heap.add(val);
     // i = 전체 힙배열 에서 마지막 자리
@@ -40,6 +40,8 @@ public void push(int val) {
 }
 ```
 
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/5f3fc3d6-f467-428b-90c6-a4ab3d749716)
+
 - 출처 : https://neetcode.io/courses/dsa-for-beginners/24
 
 ## pop
@@ -54,9 +56,15 @@ root 노드인 14를 pop한다고 가정해보겠습니다.
 
 마지막 레벨이 아닌 레벨에서 모든 노드가 채워진다는 규칙이 깨져버립니다.
 
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/49903bad-0b47-433f-b73f-445aa665af14)
+
+
 > 구조적 특성 : 바이너리 힙은 최하위 레벨 노드를 제외하고 트리의 모든 레벨이 완전히 채워지는 완전 이진 트리입니다.
 
-올바른 방법은 마지막 레벨의 가장 오른쪽 노드(30)를 가져와 루트 노드(16)로 교체하는 것입니다.
+올바른 방법은 마지막 레벨의 가장 오른쪽 노드(30)를 가져와 루트 노드(14)로 교체하는 것입니다.
+
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/fed0676a-98c1-4d65-a9f2-1df628447c45)
+
 
 이제 구조적 특성을 유지할 수 있습니다.
 
@@ -64,11 +72,18 @@ root 노드인 14를 pop한다고 가정해보겠습니다.
 
 16, 19 노드 중 더 작은 노드와 30을 스왑합니다.
 
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/b9320955-925d-4027-a873-c4e63bcfceca)
+
+
+
 스왑한 뒤의 30은 아직도 순서적 특성을 위반하고 있습니다. 자식 노드인 19보다 더 크죠.
 
 19와 30을 스왑해줍니다.
 
-```text
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/fc7681ab-c796-4472-956d-938370b826ed)
+
+
+```java
 public int pop() {
     // 힙의 사이즈가 1이면 pop할 것이 없으므로 null 리턴, 0번째 인덱스를 채우기 위한 더미데이터가 존재하기 때문에 사이즈 1임
     if (heap.size() == 1) {
@@ -123,8 +138,10 @@ public int pop() {
     return res;
 }
 ```
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/83c890d7-ad9e-423c-937e-f414bb5375ff)
 
 - 출처 : https://neetcode.io/courses/dsa-for-beginners/24
 
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/9b2aaaec-a61b-4b3d-b0c2-c783a4b6d474)
 
 
