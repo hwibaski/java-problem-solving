@@ -9,7 +9,7 @@
 우선 힙을 구축하기 전에 확인해야할 것은 구조적 특성과 순서적 특성을 만족시키는 것입니다.
 완전 이진 트리인지, 모든 노드가 부모의 노드보다 작은지도 확인해야합니다.
 
-```text
+```java
 public void heapify(ArrayList<Integer> arr) {
     // 0번째 요소 가장 끝으로 이동
     arr.add(arr.get(0));
@@ -48,6 +48,9 @@ public void heapify(ArrayList<Integer> arr) {
     return;
 }
 ```
+
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/178f4e07-d844-47eb-bda4-6ca8f47e3d0b)
+
 
 - 출처 : https://neetcode.io/courses/dsa-for-beginners/25
 
