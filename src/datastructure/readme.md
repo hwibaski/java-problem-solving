@@ -37,3 +37,7 @@
 1. [Heap Properties](https://github.com/hwibaski/java-problem-solving/tree/main/src/datastructure/priorityqueue/heapproperties)
 2. [Push and Pop](https://github.com/hwibaski/java-problem-solving/tree/main/src/datastructure/priorityqueue/pushandpop)
 3. [Heapify]((https://github.com/hwibaski/java-problem-solving/tree/main/src/datastructure/priorityqueue/heapify))
+
+### Hash
+
+1. [HashMap](https://github.com/hwibaski/java-problem-solving/tree/main/src/datastructure/hashing/hashimplementation)
