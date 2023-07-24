@@ -41,3 +41,7 @@
 ### Hash
 
 1. [HashMap](https://github.com/hwibaski/java-problem-solving/tree/main/src/datastructure/hashing/hashimplementation)
+
+### Graphs
+
+1. [Intro to Graphs](https://github.com/hwibaski/java-problem-solving/tree/main/src/datastructure/graph/intro)
