@@ -17,6 +17,8 @@
 트리와 링크드 리스트는 directed graph입니다.
 left_child, right_child, prev, next 포인터들이 특정 방향으로 연결되어 있기 때문입니다.
 
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/f46f0622-f0c5-4ce7-b3ac-cdcd4fb22d1c)
+
 - 출처 : https://neetcode.io/courses/dsa-for-beginners/28
 
 ## 그래프를 표현하는 방법들
@@ -30,7 +32,7 @@ left_child, right_child, prev, next 포인터들이 특정 방향으로 연결�
 행렬은 행과 열이 있는 2차원 배열이며, 그래프는 행렬을 사용하여 표현할 수 있습니다.
 아래 코드에서 쉼표로 구분된 각 배열은 각 행을 나타냅니다. 여기에는 4개의 행과 4개의 열이 있습니다.
 
-```text
+```java
 // Matrix (2D Grid)
 int[][] grid = {{0, 0, 0, 0},
                 {1, 1, 0, 0},
@@ -44,18 +46,18 @@ int[][] grid = {{0, 0, 0, 0},
 그래프를 가로지르기 위해 위, 아래, 왼쪽, 오른쪽으로 이동할 수 있습니다.
 가장자리를 사용하여 0을 서로 연결하면 결국 연결된 구성 요소인 연결된 0이 많아지고 이는 그래프를 나타냅니다.
 
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/ecbd3a61-b31f-46c9-873e-431a82d2e658)
+
 - 출처 : https://neetcode.io/courses/dsa-for-beginners/28
 
 ## 인접 행렬
 
-```text
+```java
 // Adjacency matrix
 int[][] adjMatrix = {{0, 0, 0, 0},
                      {1, 1, 0, 0},
                      {0, 0, 0, 1},
                      {0, 1, 0, 0}};
-
-
 ```
 
 인정 행렬으로 구현된 그래프에서는 다음과 같은 규칙이 있습니다.
@@ -86,7 +88,7 @@ adjMatrix[v2][v1] = 0;
 일반적으로 그래프를 표현하는 가장 일반적인 방법입니다. 이 또한 2차원 배열입니다.
 여기서 편리한 점은 그래프노드라는 클래스를 사용해 선언할 수 있고, 이 클래스에는 이웃이라는 리스트 필드가 포함되어 있어 주어진 정점의 모든 이웃에 액세스할 수 있다는 것입니다.
 
-```text
+```java
 public class GraphNode {
     int val;
     List<GraphNode> neighbors;
@@ -99,6 +101,9 @@ public class GraphNode {
 ```
 
 이렇게 하면 연결된 노드만 신경 쓰기 때문에 공간 효율성이 높아집니다.
+
+![image](https://github.com/hwibaski/java-problem-solving/assets/85930725/827ee2b0-108e-49b8-82b3-ae126b2cf4f8)
+
 
 - 출처 : https://neetcode.io/courses/dsa-for-beginners/28
 
